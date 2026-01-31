@@ -1,20 +1,4 @@
 {
-  "version": 2,
-  "buildCommand": "npm install",
-  "public": true,
-  "functions": {
-    "api/**/*.ts": {
-      "runtime": "@vercel/node@3.0.0"
-    }
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/index.html"
-    }
-  ]
+  "buildCommand": "echo 'Static site'",
+  "outputDirectory": "public"
 }
